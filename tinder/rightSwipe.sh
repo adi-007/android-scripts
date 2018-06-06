@@ -13,7 +13,11 @@ arg1=$1
 
 counter=1
 
-cd /home/adi/Android_SDK/platform-tools
+# Add the location of "adb" tool installed in your system.
+# Generally it is inside the "Android_SDK/platform-tools" folder.
+# Example: "/home/<userName>/Android_SDK/platform-tools.
+cd /home/<userName>/Android_SDK/platform-tools # this is the location of "adb" tool. UPDATE THIS. 
+
 ./adb devices
 ./adb -s <device ID> shell "
 
